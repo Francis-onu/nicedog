@@ -1,0 +1,222 @@
+/* We use h1 as element, #title as id and .btn as class */
+
+body {
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat-Bold";
+}
+
+p {
+    /*This is the paragraph element*/
+    color: #8f8f8f;
+    /**/
+}
+
+
+/* Heading Session */
+
+.big-heading {
+    font-family: "Montserrat-Black";
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.container-fluid {
+    /* Make our website responsive*/
+    padding: 7% 15%;
+    /* This is 7% top and bottom and 15% left and right*/
+}
+
+
+/* Navigation Bar Session*/
+
+.navbar {
+    padding: 0 0 4.5rem;
+    /* This is 0 top 0 left and right and 4.5 rem bottom only */
+}
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 10px;
+    /* 0 px top and bottom and 10px left and right between the items ie creating space among pricing, download and contact*/
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light";
+}
+
+.download-button {
+    margin: 5% 3% 5% 0;
+    /* This 5% top 3% left 5% right and 0 bottom margin*/
+}
+
+
+/* Title Session */
+
+#title .container-fluid {
+    /*This means for the ccontainer-fluid inside our title apply this padding*/
+    padding: 3% 15% 7%;
+    /*This is 3% top 15% left and right and 7% bottom*/
+    text-align: left;
+}
+
+.title-image {
+    width: 60%; /* This reduces the size of the iphone by 60% */
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+    border-radius: 25px; /*This changes the phone vertices from rectangular to curve*/
+}
+
+
+/* Session Session */
+
+.colored-section {
+    background-color: #ff4c68;
+    /* we use # for id value*/
+    color: #fff;
+}
+
+.white-section {
+    background-color: #fff;
+}
+
+
+/*Feature Session*/
+
+#features {
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+}
+
+.feature-box {
+    padding: 5%;
+}
+
+.icon {
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+
+.icon:hover {
+    color: #ff4c68;
+}
+
+
+/*Testimonials Session*/
+
+#testimonials {
+    /*The id #testimonials is more specific and it allows its background-color to override the background-color in the colored section */
+    background-color: #ef8172;
+}
+
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    /* This changes the image frame from square to circle*/
+    margin: 20px;
+    /*  This is all round margin top, left, right and buttom*/
+}
+
+#press {
+    background-color: #ef8172;
+    /*The id #press is more specific and it allows its background-color to override the background-color in the colored section */
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 10%;
+    margin: 20px 20px 50px;
+}
+
+.press-log{
+    width: 8%;
+    border-radius: 8px;
+}
+
+/*Pricing Session*/
+
+#pricing {
+    padding: 100px;
+}
+
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+
+/*Footer Session*/
+
+.social-icon {
+    margin: 20px 10px;
+    /*This is 20px top and bottom 10 px left and right*/
+}
+
+@media (max-width: 1028px) {
+    /*This is media query. It is used to make our web site Mobile-Friendly*/
+    #title {
+        text-align: center;
+        /*This centre our text on Mobile device*/
+    }
+    .title-image {
+        position: static;
+        /*The static and the default rotate(0) makes the image to stand at 90 degree on Mobile devices*/
+        transform: rotate(0);
+    }
+}
+
+
+/*padding: 3% 15% 7%;     This is 3% padding up and 15% left and right and 7% bottom*/
+
+
+/**Contact Page*/
+.contact-form {
+    width: 100%;
+    margin: 0;
+  }
+  .contact-container {
+    display: grid;
+    gap: 2rem 3rem;
+    padding-bottom: 3rem;
+  }
+  @media screen and (min-width: 992px) {
+    .contact-container {
+      grid-template-columns: 1fr 450px;
+      align-items: center;
+    }
+    
+  }
